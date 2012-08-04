@@ -22,9 +22,7 @@
 </div>
 <?php if ($this->username) { ?>
 <div style="float: left">
-<?php 
-echo $this -> partial('sidebar.phtml'); //,array('menuitems' => $data)
-?>
+<?= $this -> partial('shared/sidebar.phtml');?>
 </div>
 <?php } ?>
 
