@@ -20,7 +20,13 @@
 	    true) ?>">logout</a> <?php } ?>
 	</div>
 </div>
-
+<?php if ($this->username) { ?>
+<div style="float: left">
+<?php 
+include 'sidebar.php';
+?>
+</div>
+<?php } ?>
 
 <?php echo $this->layout()->content ?>
 
