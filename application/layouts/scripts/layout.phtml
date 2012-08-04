@@ -11,13 +11,13 @@
         <b>Share your knowladge</b>
     </div>
     <div id="header-navigation" style="float: right">
-		Welcome <?php echo $this->username?> | <a href="<?php echo $this->url(
+		Welcome <?php echo $this->username?> <?php if ($this->username) { ?>| <a href="<?php echo $this->url(
 	    array(
 	        'controller' => 'auth',
 	        'action'     => 'logout'
 	    ),
 	    'default',
-	    true) ?>">logout</a>
+	    true) ?>">logout</a> <?php } ?>
 	</div>
 </div>
 
