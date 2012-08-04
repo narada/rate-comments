@@ -23,7 +23,7 @@
 <?php if ($this->username) { ?>
 <div style="float: left">
 <?php 
-include 'sidebar.php';
+echo $this -> partial('sidebar.phtml'); //,array('menuitems' => $data)
 ?>
 </div>
 <?php } ?>
