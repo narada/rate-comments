@@ -68,22 +68,13 @@ class AuthController extends Zend_Controller_Action
             }
         }
     }
-    
-    public function adddocumentAction()
-    {
-        $form = new Application_Form_DocumentForm();
-        $this->view->form=$form;
         
-        
-    }
-    
     public function logoutAction()
     {
         $storage = new Zend_Auth_Storage_Session();
         $storage->clear();
         $this->_redirect('auth/login');
     }
-
 }
 
 ?>

@@ -1,0 +1,14 @@
+<div id="sidebar" style="width: 150px;">
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="<?php echo $this->url(
+	    array(
+	        'controller' => 'post',
+	        'action'     => 'create'
+	    ),
+	    'default',
+	    true) ?>">Create a post</a></li>
+		<li><a href="#">Profile</a></li>
+		<li><a href="#">List of Post</a></li>
+	</ul>
+</div>

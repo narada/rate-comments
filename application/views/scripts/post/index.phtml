@@ -1,0 +1,9 @@
+<div id="doclist">
+	<?php if ($this->data) { ?>
+		<?php foreach ($this->data as $d) {?>
+			<p><?php echo $d['title']?> by <?php echo $d['username']?></p>
+		<?php }?>
+	<?php } else { 
+		echo "No record found..!";
+		} ?>
+</div>
